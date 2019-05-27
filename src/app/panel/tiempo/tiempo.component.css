@@ -1,0 +1,24 @@
+div.row {
+    flex-direction: row;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+div.row > div {
+    margin-top: -100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: -100px;
+    font-size: 150px;
+    font-weight: 100;
+}
+div.properties > p{
+    font-size: 22px;
+    text-align: left;
+    line-height: 2;
+}
+
+.weather {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+}

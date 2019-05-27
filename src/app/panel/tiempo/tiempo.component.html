@@ -1,0 +1,19 @@
+<div class="row">
+    <div>
+        <p *ngIf="diaActual">{{diaActual.signoTemperatura}}{{diaActual.temperatura | number: '2.0-0'}} ºC</p>
+    </div>
+    <div>
+      <p>
+            <i *ngIf="diaActual" [ngClass]="{'pe-is-w-heavy-rain-1': diaActual.clima == 'lluvia', 'pe-is-w-sun-1': diaActual.clima == 'soleado','pe-is-w-moon-2': diaActual.clima == 'noche', 'pe-is-w-mostly-cloudy-2': diaActual.clima == 'muyNublado', 'pe-is-w-mostly-cloudy-1' : diaActual.clima == 'nublado', 'pe-is-w-partly-cloudy-1': diaActual.clima == 'pocasNubes'}"></i>
+    </div>
+    <div class="properties">
+            <p *ngIf="diaActual">
+                <i class="pe-is-w-thermometer-2-f"></i> {{diaActual.presion}} <br>
+                <i class="pe-is-w-compass-n"></i> {{diaActual.humedad}} humidity <br>
+                <i class="pe-is-w-wind"></i> {{diaActual.viento}} m/s <br>
+            </p>
+    </div>
+</div>
+<span class="weather" *ngIf="diaActual">
+       {{diaActual.cielo}}
+</span>

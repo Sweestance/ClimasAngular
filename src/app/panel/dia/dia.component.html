@@ -1,0 +1,7 @@
+<div class="dia">
+  <div class="text">
+      <p>{{datos.fecha | date: 'EEEE'}}</p> 
+      <i class="iconoClima" [ngClass]="{'pe-is-w-heavy-rain-1': datos.clima == 'lluvia', 'pe-is-w-sun-1': datos.clima == 'soleado','pe-is-w-moon-2': datos.clima == 'noche', 'pe-is-w-mostly-cloudy-2': datos.clima == 'muyNublado', 'pe-is-w-mostly-cloudy-1' : datos.clima == 'nublado', 'pe-is-w-partly-cloudy-1': datos.clima == 'pocasNubes'}"></i>
+      <p class="temp">{{datos.signoTemperatura}}{{datos.temperatura | number: '2.0-0'}} ºC</p>
+  </div>
+</div> 

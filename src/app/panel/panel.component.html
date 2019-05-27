@@ -1,0 +1,11 @@
+<app-titulo [diaActual] = 'diaActual'></app-titulo>
+<app-tiempo [diaActual] = 'diaActual'></app-tiempo>
+<div class="dias"> 
+  <div class="dia {{dia.clima}}" *ngFor="let dia of dias">
+    <app-dia [datos] = 'dia'></app-dia> 
+  </div>
+</div>
+<form (keyup.enter)="onSubmit(this)">
+        <input type="text" class="buscador" name="buscador" placeholder="Search city..." [(ngModel)]="ciudad">
+</form>
+
