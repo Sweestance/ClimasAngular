@@ -9,7 +9,6 @@ import { DiaComponent } from './panel/dia/dia.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
-import { LoggingService } from './LoggingService.service';
 import { DataServices } from './data.services';
 import { DatePipe } from '@angular/common';
 

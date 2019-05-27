@@ -1,7 +1,7 @@
 <app-titulo [diaActual] = 'diaActual'></app-titulo>
 <app-tiempo [diaActual] = 'diaActual'></app-tiempo>
 <div class="dias"> 
-  <div class="dia {{dia.clima}}" *ngFor="let dia of dias">
+  <div class="dia dia{{i}} {{dia.clima}}" *ngFor="let dia of dias; let i = index">
     <app-dia [datos] = 'dia'></app-dia> 
   </div>
 </div>
